@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/melrose/test/t_ddetector/Lock.h
+stdio.h
+-
+string
+-
+
+/home/melrose/test/t_ddetector/LockManager.cpp
+LockManager.h
+/home/melrose/test/t_ddetector/LockManager.h
+
+/home/melrose/test/t_ddetector/LockManager.h
+condition_variable
+-
+stdio.h
+-
+iostream
+-
+memory
+-
+map
+-
+list
+-
+vector
+-
+set
+-
+string
+-
+thread
+-
+chrono
+-
+mutex
+-
+Lock.h
+/home/melrose/test/t_ddetector/Lock.h
+

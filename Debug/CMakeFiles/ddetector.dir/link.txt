@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/ddetector.dir/main.cpp.o CMakeFiles/ddetector.dir/LockManager.cpp.o  -o ddetector  -lpthread 
