@@ -3,7 +3,7 @@
 
 死锁的检测是通过检测死锁图中有没有环来实现的，如果对于请求同一资源的两个锁L1和L2(其对应的进程为P1和P2)，L1已经获得资源而L2在等待，则死锁图中有一条边P2->P1。
 
-使用Korasaju算法（![参考](https://www.cnblogs.com/RioTian/p/14026585.html) ）找到图中所有的强联通分量。
+使用Korasaju算法(https://www.cnblogs.com/RioTian/p/14026585.html)找到图中所有的强联通分量。
 
 死锁图一般是比较稀疏的图，存储使用邻接表。
 
