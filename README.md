@@ -16,10 +16,15 @@
 ```c++
 class Lock{
 public:
-    Lock(int p, int res, int stat=0);
-    int node_name; // 所属进程
-    int param_name; // 资源id
+    string node_name;
+    string param_name;
     int state; //0 == locked, 1 == waiting
+
+    Lock(string p, string res, int stat) {
+        node_name = p;
+        param_name = res;
+        state = stat;
+    }
 };
 ```
 
