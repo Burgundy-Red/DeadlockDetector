@@ -191,10 +191,7 @@ void LockManager::detectDeadlock() {
         mtx.unlock();
         
         // 控制检测频率
-        std::time_t tt = system_clock::to_time_t (system_clock::now());
-        struct std::tm *ptm = std::localtime(&tt);
-        ptm->tm_sec += check_interval;
-        std::this_thread::sleep_until(system_clock::from_time_t(mktime(ptm)));
+        std::this_thread::sleep_for(std::chrono::seconds(check_interval));
     }
 }
 
